@@ -1,0 +1,39 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "authentication": {
+    "entity": "user",
+    "service": "users",
+    "secret": "/BoFTOis4gYJz65DMaLs4yjuYPI=",
+    "authStrategies": [
+      "jwt",
+      "local"
+    ],
+    "jwtOptions": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  },
+  "nedb": "../data",
+  "vapid": {
+    "publicKey": "BBq0lNxTcXa9SlDzccCNuqD6U3KGCnH64WSJ6RdQykpIJ4NSAtqIzzu1N5-1B2wo8rLBu-k7ARmpZocENI2iSBU",
+    "privateKey":"lIm_YJCdQk4gCbJxwOL_qIzkOCc-nwCo4wPyczRpRf0",
+    "subject" : "mailto:jaivrat12@gmail.com"
+  },
+  "image": "https://miro.medium.com/max/742/1*2TDREss7Pa_F5Z6CsHeD_w.jpeg",
+  "logo": "https://cdn.freebiesupply.com/logos/thumbs/2x/feathersjs-logo.png"
+}
